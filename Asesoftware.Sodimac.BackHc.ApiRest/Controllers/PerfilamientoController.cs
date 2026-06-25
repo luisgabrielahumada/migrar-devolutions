@@ -139,6 +139,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 		}
 
 		// Token: 0x0600000F RID: 15 RVA: 0x00002368 File Offset: 0x00000568
+		[NonAction]
 		public IList<ValidationResult> myValidation(object model)
 		{
 			List<ValidationResult> result = new List<ValidationResult>();
