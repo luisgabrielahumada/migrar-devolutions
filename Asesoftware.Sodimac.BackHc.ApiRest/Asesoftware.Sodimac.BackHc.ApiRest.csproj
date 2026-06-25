@@ -1,76 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651890}</ProjectGuid>
-    <OutputType>Library</OutputType>
     <RootNamespace>Asesoftware.Sodimac.BackHc.ApiRest</RootNamespace>
     <AssemblyName>Asesoftware.Sodimac.BackHc.ApiRest</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <FileAlignment>512</FileAlignment>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  <PropertyGroup>
-    <EnableDefaultItems>False</EnableDefaultItems>
-  </PropertyGroup>
-  <PropertyGroup />
   <ItemGroup>
-    <Compile Include="App_Start\AddRequiredHeaderParameter.cs" />
-    <Compile Include="Controllers\DevolucionController.cs" />
-    <Compile Include="Controllers\PerfilamientoController.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SwaggerConfig.cs" />
-    <Compile Include="WebApiApplication.cs" />
-    <Compile Include="WebApiConfig.cs" />
+    <Compile Remove="SwaggerConfig.cs;WebApiApplication.cs;WebApiConfig.cs;App_Start\AddRequiredHeaderParameter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ApplicationInsights.config" />
-    <None Include="packages.config" />
-    <None Include="PrecompiledApp.config" />
-    <None Include="Web.config" />
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Devoluciones\Asesoftware.Sodimac.BackHc.Devoluciones.csproj" />
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.DTO\Asesoftware.Sodimac.BackHc.DTO.csproj" />
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Entidad\Asesoftware.Sodimac.BackHc.Entidad.csproj" />
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Perfilamiento\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj" />
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Token\Asesoftware.Sodimac.BackHc.Token.csproj" />
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Utilidades\Asesoftware.Sodimac.BackHc.Utilidades.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Devoluciones\Asesoftware.Sodimac.BackHc.Devoluciones.csproj">
-      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651891}</Project>
-      <Name>Asesoftware.Sodimac.BackHc.Devoluciones</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.DTO\Asesoftware.Sodimac.BackHc.DTO.csproj">
-      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651892}</Project>
-      <Name>Asesoftware.Sodimac.BackHc.DTO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Entidad\Asesoftware.Sodimac.BackHc.Entidad.csproj">
-      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651893}</Project>
-      <Name>Asesoftware.Sodimac.BackHc.Entidad</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Token\Asesoftware.Sodimac.BackHc.Token.csproj">
-      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651895}</Project>
-      <Name>Asesoftware.Sodimac.BackHc.Token</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Utilidades\Asesoftware.Sodimac.BackHc.Utilidades.csproj">
-      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651896}</Project>
-      <Name>Asesoftware.Sodimac.BackHc.Utilidades</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Asesoftware.Sodimac.BackHc.Perfilamiento">
-      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\Asesoftware.Sodimac.BackHc.Perfilamiento.dll</HintPath>
-    </Reference>
-    <Reference Include="Swashbuckle.Core">
-      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\Swashbuckle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting">
-      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Http">
-      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\System.Web.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http.WebHost">
-      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\System.Web.Http.WebHost.dll</HintPath>
-    </Reference>
-    <Reference Include="WebActivatorEx">
-      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\WebActivatorEx.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 </Project>

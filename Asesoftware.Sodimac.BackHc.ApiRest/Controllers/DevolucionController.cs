@@ -1,12 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
-using System.Net.Http;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Description;
+using Microsoft.AspNetCore.Mvc;
 using Asesoftware.Sodimac.BackHc.Devoluciones;
 using Asesoftware.Sodimac.BackHc.DTO.Devolucion;
 using Asesoftware.Sodimac.BackHc.DTO.Mensaje;
@@ -16,27 +13,20 @@ using Asesoftware.Sodimac.BackHc.Utilidades.Excepciones;
 namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 {
 	// Token: 0x02000005 RID: 5
-	[RoutePrefix("devolucion")]
-	public class DevolucionController : ApiController
+	[ApiController]
+	[Route("devolucion")]
+	public class DevolucionController : ControllerBase
 	{
 		// Token: 0x06000007 RID: 7 RVA: 0x0000211C File Offset: 0x0000031C
 		[HttpPost]
 		[Route("actualizar")]
-		public async Task<IHttpActionResult> ActualizarDevolucionesAsync([FromBody] DevolucionDTO solicitud)
+		public async Task<IActionResult> ActualizarDevolucionesAsync([FromBody] DevolucionDTO solicitud)
 		{
 			try
 			{
-				HttpRequestMessage re = base.Request;
+				var re = Request;
 				this._validatoken = new TokenValidacion();
-				TaskAwaiter<bool> taskAwaiter = this._validatoken.ValidarAsync(re).GetAwaiter();
-				if (!taskAwaiter.IsCompleted)
-				{
-					await taskAwaiter;
-					TaskAwaiter<bool> taskAwaiter2;
-					taskAwaiter = taskAwaiter2;
-					taskAwaiter2 = default(TaskAwaiter<bool>);
-				}
-				if (!taskAwaiter.GetResult() && !this._validatoken.isBroker(re))
+				if (!await this._validatoken.ValidarAsync(re) && !this._validatoken.isBroker(re))
 				{
 					throw new Exception("Token invalido.");
 				}
@@ -44,20 +34,20 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex)
 			{
-				return this.Content<Mensaje>(HttpStatusCode.Unauthorized, new Mensaje
+				return StatusCode((int)HttpStatusCode.Unauthorized, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Token invalido.",
 					objetoRespuesta = ex
 				});
 			}
-			IHttpActionResult httpActionResult;
+			IActionResult httpActionResult;
 			try
 			{
 				this.devolucionNegocio = new DevolucionNegocio();
 				if (this.devolucionNegocio.actualizaDevolucion(solicitud).Equals("0"))
 				{
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.OK, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.OK, new Mensaje
 					{
 						codigoRespuesta = "0",
 						mensajeRespuesta = "Actualización realizada satisfactoriamente."
@@ -65,7 +55,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 				}
 				else
 				{
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 					{
 						codigoRespuesta = "0",
 						mensajeRespuesta = "Se presentó una irregularidad durante la actualización."
@@ -74,7 +64,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex2)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -87,40 +77,32 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 		// Token: 0x06000008 RID: 8 RVA: 0x0000216C File Offset: 0x0000036C
 		[HttpGet]
 		[Route("consultarCantidad")]
-		public async Task<IHttpActionResult> ConsultarCantidadDevolucionesAsync(string identificacion, string tipoIdentificacion)
+		public async Task<IActionResult> ConsultarCantidadDevolucionesAsync(string identificacion, string tipoIdentificacion)
 		{
 			try
 			{
-				HttpRequestMessage re = base.Request;
+				var re = Request;
 				this._validatoken = new TokenValidacion();
-				TaskAwaiter<bool> taskAwaiter = this._validatoken.ValidarAsync(re).GetAwaiter();
-				if (!taskAwaiter.IsCompleted)
-				{
-					await taskAwaiter;
-					TaskAwaiter<bool> taskAwaiter2;
-					taskAwaiter = taskAwaiter2;
-					taskAwaiter2 = default(TaskAwaiter<bool>);
-				}
-				if (!taskAwaiter.GetResult())
+				if (!await this._validatoken.ValidarAsync(re))
 				{
 					throw new Exception("Token invalido.");
 				}
 			}
 			catch (Exception ex)
 			{
-				return this.Content<Mensaje>(HttpStatusCode.Unauthorized, new Mensaje
+				return StatusCode((int)HttpStatusCode.Unauthorized, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Token invalido.",
 					objetoRespuesta = ex
 				});
 			}
-			IHttpActionResult httpActionResult;
+			IActionResult httpActionResult;
 			try
 			{
 				if (string.IsNullOrEmpty(identificacion) || string.IsNullOrEmpty(tipoIdentificacion))
 				{
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.BadRequest, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.BadRequest, new Mensaje
 					{
 						codigoRespuesta = "1",
 						mensajeRespuesta = "Falta uno o más parámetros para realizar la consulta."
@@ -130,7 +112,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 				{
 					this.devolucionNegocio = new DevolucionNegocio();
 					int devoluciones = this.devolucionNegocio.ConsultarCantidadDevoluciones(identificacion, tipoIdentificacion);
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.OK, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.OK, new Mensaje
 					{
 						codigoRespuesta = "0",
 						mensajeRespuesta = "",
@@ -140,7 +122,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (ExcepcionOperacion exOp)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -149,7 +131,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex2)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -162,22 +144,13 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 		// Token: 0x06000009 RID: 9 RVA: 0x000021C4 File Offset: 0x000003C4
 		[HttpGet]
 		[Route("consultar")]
-		[ResponseType(typeof(Mensaje))]
-		public async Task<IHttpActionResult> ConsultarDevolucionesAsync(int idSolicitudDevolucion = 0, string correo = "", string identificacion = "", string tipoIdentificacion = "", string estado = "")
+				public async Task<IActionResult> ConsultarDevolucionesAsync(int idSolicitudDevolucion = 0, string correo = "", string identificacion = "", string tipoIdentificacion = "", string estado = "")
 		{
 			try
 			{
-				HttpRequestMessage re = base.Request;
+				var re = Request;
 				this._validatoken = new TokenValidacion();
-				TaskAwaiter<bool> taskAwaiter = this._validatoken.ValidarAsync(re).GetAwaiter();
-				if (!taskAwaiter.IsCompleted)
-				{
-					await taskAwaiter;
-					TaskAwaiter<bool> taskAwaiter2;
-					taskAwaiter = taskAwaiter2;
-					taskAwaiter2 = default(TaskAwaiter<bool>);
-				}
-				if (!taskAwaiter.GetResult() && !this._validatoken.isBroker(re))
+				if (!await this._validatoken.ValidarAsync(re) && !this._validatoken.isBroker(re))
 				{
 					throw new Exception("Token invalido.");
 				}
@@ -185,19 +158,19 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex)
 			{
-				return this.Content<Mensaje>(HttpStatusCode.Unauthorized, new Mensaje
+				return StatusCode((int)HttpStatusCode.Unauthorized, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Token invalido.",
 					objetoRespuesta = new Exception(ex.Message, ex.InnerException)
 				});
 			}
-			IHttpActionResult httpActionResult;
+			IActionResult httpActionResult;
 			try
 			{
 				if (idSolicitudDevolucion == 0 && string.IsNullOrEmpty(correo) && (string.IsNullOrEmpty(identificacion) || string.IsNullOrEmpty(tipoIdentificacion)))
 				{
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.BadRequest, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.BadRequest, new Mensaje
 					{
 						codigoRespuesta = "1",
 						mensajeRespuesta = "Falta uno o más parámetros para realizar la consulta."
@@ -211,7 +184,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 					{
 						devoluciones = devoluciones.FindAll((SolicitudDTO p) => p.estado == estado);
 					}
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.OK, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.OK, new Mensaje
 					{
 						codigoRespuesta = "0",
 						mensajeRespuesta = "",
@@ -221,7 +194,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (ExcepcionOperacion exOp)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -230,7 +203,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex2)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -243,50 +216,41 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 		// Token: 0x0600000A RID: 10 RVA: 0x00002234 File Offset: 0x00000434
 		[HttpPost]
 		[Route("crear")]
-		[ResponseType(typeof(Mensaje))]
-		public async Task<IHttpActionResult> CrearDevolucionesAsync([FromBody] SolicitudDTO solicitud)
+				public async Task<IActionResult> CrearDevolucionesAsync([FromBody] SolicitudDTO solicitud)
 		{
 			try
 			{
-				if (!base.ModelState.IsValid)
+				if (!ModelState.IsValid)
 				{
-					return this.Content<Mensaje>(HttpStatusCode.BadRequest, new Mensaje
+					return StatusCode((int)HttpStatusCode.BadRequest, new Mensaje
 					{
 						codigoRespuesta = "1",
 						mensajeRespuesta = "El json no es valido.",
-						objetoRespuesta = base.ModelState
+						objetoRespuesta = ModelState
 					});
 				}
-				HttpRequestMessage re = base.Request;
+				var re = Request;
 				this._validatoken = new TokenValidacion();
-				TaskAwaiter<bool> taskAwaiter = this._validatoken.ValidarAsync(re).GetAwaiter();
-				if (!taskAwaiter.IsCompleted)
-				{
-					await taskAwaiter;
-					TaskAwaiter<bool> taskAwaiter2;
-					taskAwaiter = taskAwaiter2;
-					taskAwaiter2 = default(TaskAwaiter<bool>);
-				}
-				if (!taskAwaiter.GetResult())
+				if (!await this._validatoken.ValidarAsync(re))
 				{
 					throw new Exception("Token invalido.");
 				}
 			}
 			catch (Exception ex)
 			{
-				return this.Content<Mensaje>(HttpStatusCode.Unauthorized, new Mensaje
+				return StatusCode((int)HttpStatusCode.Unauthorized, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Token invalido.",
 					objetoRespuesta = ex
 				});
 			}
-			IHttpActionResult httpActionResult;
+			IActionResult httpActionResult;
 			try
 			{
 				this.devolucionNegocio = new DevolucionNegocio();
 				string idSolicitud = this.devolucionNegocio.insertarSolicitudDevolucion(solicitud);
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.OK, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.OK, new Mensaje
 				{
 					codigoRespuesta = "0",
 					mensajeRespuesta = "Solicitud de devolución creada.",
@@ -295,7 +259,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex2)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",

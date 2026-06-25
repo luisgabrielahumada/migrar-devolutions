@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651891}</ProjectGuid>
@@ -7,7 +7,7 @@
     <AssemblyName>Asesoftware.Sodimac.BackHc.Devoluciones</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <FileAlignment>512</FileAlignment>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <EnableDefaultItems>False</EnableDefaultItems>
@@ -26,8 +26,5 @@
       <Project>{F1EB76D2-748C-49DA-B6B6-98E508651894}</Project>
       <Name>Asesoftware.Sodimac.BackHc.Modelo</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Xml" />
   </ItemGroup>
 </Project>
