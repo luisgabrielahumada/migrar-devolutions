@@ -22,10 +22,10 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "AppHC.ApiRest v1");
-    options.RoutePrefix = "swagger";
+    options.SwaggerEndpoint("swagger/v1/swagger.json", "AppHC.ApiRest v1");
+    options.RoutePrefix = string.Empty;
 });
 
-app.MapGet("/", () => Results.Redirect("/swagger"));
+app.MapGet("/swagger", () => Results.Redirect("/"));
 app.MapControllers();
 app.Run();
