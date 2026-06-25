@@ -7,7 +7,7 @@
     <AssemblyName>Asesoftware.Sodimac.BackHc.Utilidades</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <FileAlignment>512</FileAlignment>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <EnableDefaultItems>False</EnableDefaultItems>

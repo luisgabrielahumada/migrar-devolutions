@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zjKGtynBBKM=",
+  "dgSpecHash": "0qNrNPPGaUw=",
   "success": true,
   "projectFilePath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj",
   "expectedPackageFiles": [
@@ -115,7 +115,7 @@
       "filePath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
-        "net6.0"
+        "net8.0"
       ]
     }
   ]

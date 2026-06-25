@@ -4,7 +4,7 @@
     <RootNamespace>Asesoftware.Sodimac.BackHc.ApiRest</RootNamespace>
     <AssemblyName>Asesoftware.Sodimac.BackHc.ApiRest</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>

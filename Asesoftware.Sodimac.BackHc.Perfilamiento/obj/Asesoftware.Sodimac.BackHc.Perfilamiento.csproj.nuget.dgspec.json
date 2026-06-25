@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,9 +31,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -50,9 +50,9 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -91,7 +91,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -100,9 +100,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -119,9 +119,9 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -138,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -160,7 +160,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -169,9 +169,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
                 "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
@@ -195,9 +195,9 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -220,7 +220,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -242,7 +242,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -251,9 +251,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "framework": "net6.0",
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
                 "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
@@ -280,9 +280,9 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "framework": "net6.0",
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -305,7 +305,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
