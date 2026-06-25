@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6XQm0YZCvW4=",
+  "dgSpecHash": "jUiWXH7C7DA=",
   "success": true,
-  "projectFilePath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\luisg\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
-    "C:\\Users\\luisg\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net45\\1.0.3\\microsoft.netframework.referenceassemblies.net45.1.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

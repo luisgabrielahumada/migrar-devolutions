@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {}
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {}
   },
   "projects": {
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.Token",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,9 +31,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -50,15 +50,36 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+              "version": "[13.0.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"

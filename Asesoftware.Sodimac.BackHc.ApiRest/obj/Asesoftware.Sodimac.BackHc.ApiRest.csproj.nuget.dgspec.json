@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj": {}
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj": {}
   },
   "projects": {
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.ApiRest",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.ApiRest\\Asesoftware.Sodimac.BackHc.ApiRest.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.ApiRest\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.ApiRest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,24 +31,27 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj"
               },
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
               },
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj"
               },
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj"
               },
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj"
+              },
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj"
               }
             }
           }
@@ -66,29 +69,46 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.Devoluciones",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Devoluciones\\Asesoftware.Sodimac.BackHc.Devoluciones.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Devoluciones\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Devoluciones\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,7 +119,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -108,15 +128,15 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
               },
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj"
               }
             }
           }
@@ -134,29 +154,37 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.DTO",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -167,7 +195,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -176,9 +204,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -195,29 +223,37 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.Entidad",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -228,7 +264,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -237,9 +273,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -256,29 +292,37 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.Modelo",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -289,7 +333,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -298,15 +342,15 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
               },
-              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
-                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj"
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj"
               }
             }
           }
@@ -324,29 +368,128 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
+            "EntityFramework": {
               "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj",
+        "projectName": "Asesoftware.Sodimac.BackHc.Perfilamiento",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\Asesoftware.Sodimac.BackHc.Perfilamiento.csproj",
+        "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Perfilamiento\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luisg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
+              },
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj"
+              },
+              "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.Token",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\Asesoftware.Sodimac.BackHc.Token.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Token\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Token\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -357,7 +500,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -366,9 +509,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -385,29 +528,50 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+              "version": "[13.0.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj",
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj",
         "projectName": "Asesoftware.Sodimac.BackHc.Utilidades",
-        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\Asesoftware.Sodimac.BackHc.Utilidades.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Utilidades\\obj\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\migrar-devolutions\\Asesoftware.Sodimac.BackHc.Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -418,7 +582,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net45"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -427,9 +591,9 @@
           "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
         },
         "frameworks": {
-          "net45": {
-            "framework": "net45",
-            "targetAlias": "net45",
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -446,15 +610,23 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "net45": {
-          "framework": "net45",
-          "targetAlias": "net45",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
