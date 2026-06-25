@@ -1,12 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
-using System.Net.Http;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Description;
+using Microsoft.AspNetCore.Mvc;
 using Asesoftware.Sodimac.BackHc.DTO.Mensaje;
 using Asesoftware.Sodimac.BackHc.DTO.Perfilamiento;
 using Asesoftware.Sodimac.BackHc.Perfilamientos;
@@ -16,55 +13,48 @@ using Asesoftware.Sodimac.BackHc.Utilidades.Excepciones;
 namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 {
 	// Token: 0x02000006 RID: 6
-	[RoutePrefix("perfilamiento")]
-	public class PerfilamientoController : ApiController
+	[ApiController]
+	[Route("perfilamiento")]
+	public class PerfilamientoController : ControllerBase
 	{
 		// Token: 0x0600000D RID: 13 RVA: 0x000022C8 File Offset: 0x000004C8
 		[HttpPut]
 		[Route("actualizar")]
-		public async Task<IHttpActionResult> ActualizarPerfilamientoAsync([FromBody] PerfilamientoDTO perfilamiento)
+		public async Task<IActionResult> ActualizarPerfilamientoAsync([FromBody] PerfilamientoDTO perfilamiento)
 		{
 			try
 			{
-				if (!base.ModelState.IsValid)
+				if (!ModelState.IsValid)
 				{
-					return this.Content<Mensaje>(HttpStatusCode.BadRequest, new Mensaje
+					return StatusCode((int)HttpStatusCode.BadRequest, new Mensaje
 					{
 						codigoRespuesta = "1",
 						mensajeRespuesta = "El json no es valido.",
-						objetoRespuesta = base.ModelState
+						objetoRespuesta = ModelState
 					});
 				}
-				HttpRequestMessage re = base.Request;
+				var re = Request;
 				this._validatoken = new TokenValidacion();
-				TaskAwaiter<bool> taskAwaiter = this._validatoken.ValidarAsync(re).GetAwaiter();
-				if (!taskAwaiter.IsCompleted)
-				{
-					await taskAwaiter;
-					TaskAwaiter<bool> taskAwaiter2;
-					taskAwaiter = taskAwaiter2;
-					taskAwaiter2 = default(TaskAwaiter<bool>);
-				}
-				if (!taskAwaiter.GetResult())
+				if (!await this._validatoken.ValidarAsync(re))
 				{
 					throw new Exception("Token invalido.");
 				}
 			}
 			catch (Exception ex)
 			{
-				return this.Content<Mensaje>(HttpStatusCode.Unauthorized, new Mensaje
+				return StatusCode((int)HttpStatusCode.Unauthorized, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Token invalido.",
 					objetoRespuesta = ex
 				});
 			}
-			IHttpActionResult httpActionResult;
+			IActionResult httpActionResult;
 			try
 			{
 				this.perfilamientoNegocio = new PerfilamientoNegocio();
 				this.perfilamientoNegocio.ActualizarPerfilamiento(perfilamiento);
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.OK, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.OK, new Mensaje
 				{
 					codigoRespuesta = "0",
 					mensajeRespuesta = "Actualización realizada satisfactoriamente."
@@ -72,7 +62,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex2)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -85,41 +75,32 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 		// Token: 0x0600000E RID: 14 RVA: 0x00002318 File Offset: 0x00000518
 		[HttpGet]
 		[Route("consultar")]
-		[ResponseType(typeof(Mensaje))]
-		public async Task<IHttpActionResult> ConsultarPerfilamientoAsync(string email = "")
+				public async Task<IActionResult> ConsultarPerfilamientoAsync(string email = "")
 		{
 			try
 			{
-				HttpRequestMessage re = base.Request;
+				var re = Request;
 				this._validatoken = new TokenValidacion();
-				TaskAwaiter<bool> taskAwaiter = this._validatoken.ValidarAsync(re).GetAwaiter();
-				if (!taskAwaiter.IsCompleted)
-				{
-					await taskAwaiter;
-					TaskAwaiter<bool> taskAwaiter2;
-					taskAwaiter = taskAwaiter2;
-					taskAwaiter2 = default(TaskAwaiter<bool>);
-				}
-				if (!taskAwaiter.GetResult())
+				if (!await this._validatoken.ValidarAsync(re))
 				{
 					throw new Exception("Token invalido.");
 				}
 			}
 			catch (Exception ex)
 			{
-				return this.Content<Mensaje>(HttpStatusCode.Unauthorized, new Mensaje
+				return StatusCode((int)HttpStatusCode.Unauthorized, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Token invalido.",
 					objetoRespuesta = ex
 				});
 			}
-			IHttpActionResult httpActionResult;
+			IActionResult httpActionResult;
 			try
 			{
 				if (string.IsNullOrEmpty(email))
 				{
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.BadRequest, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.BadRequest, new Mensaje
 					{
 						codigoRespuesta = "1",
 						mensajeRespuesta = "Falta uno o más parámetros para realizar la consulta."
@@ -128,7 +109,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 				else
 				{
 					this.perfilamientoNegocio = new PerfilamientoNegocio();
-					httpActionResult = this.Content<Mensaje>(HttpStatusCode.OK, new Mensaje
+					httpActionResult = StatusCode((int)HttpStatusCode.OK, new Mensaje
 					{
 						codigoRespuesta = "0",
 						mensajeRespuesta = "",
@@ -138,7 +119,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (ExcepcionOperacion exOp)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
@@ -147,7 +128,7 @@ namespace Asesoftware.Sodimac.BackHc.ApiRest.Controllers
 			}
 			catch (Exception ex2)
 			{
-				httpActionResult = this.Content<Mensaje>(HttpStatusCode.InternalServerError, new Mensaje
+				httpActionResult = StatusCode((int)HttpStatusCode.InternalServerError, new Mensaje
 				{
 					codigoRespuesta = "1",
 					mensajeRespuesta = "Fallo en consulta.",
