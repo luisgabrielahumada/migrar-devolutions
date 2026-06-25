@@ -1,0 +1,8 @@
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.dll.config
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.pdb
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.csproj.AssemblyReference.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.csproj.CoreCompileInputs.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Entidad\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.pdb

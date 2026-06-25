@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651896}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Asesoftware.Sodimac.BackHc.Utilidades</RootNamespace>
+    <AssemblyName>Asesoftware.Sodimac.BackHc.Utilidades</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="Enumeracion\EnumGeneral.cs" />
+    <Compile Include="Excepciones\ExcepcionBase.cs" />
+    <Compile Include="Excepciones\ExcepcionOperacion.cs" />
+    <Compile Include="Mensajes\Catalogo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

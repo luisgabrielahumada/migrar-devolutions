@@ -1,0 +1,3 @@
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Token\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Token.csproj.AssemblyReference.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Token\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Token.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Token\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Token.csproj.CoreCompileInputs.cache

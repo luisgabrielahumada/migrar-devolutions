@@ -1,0 +1,7 @@
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\bin\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\bin\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.pdb
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\obj\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.csproj.AssemblyReference.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\obj\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\obj\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.csproj.CoreCompileInputs.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\obj\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.DTO\obj\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.pdb

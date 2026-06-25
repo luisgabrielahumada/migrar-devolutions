@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelAppSodimac" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="EntitiesAppSodimac" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="Auditoria" EntityType="ModelAppSodimac.Auditoria" />
+    <EntitySet Name="DetalleSolicitudDevolucion" EntityType="ModelAppSodimac.DetalleSolicitudDevolucion" />
+    <EntitySet Name="Estado" EntityType="ModelAppSodimac.Estado" />
+    <EntitySet Name="Perfilamiento" EntityType="ModelAppSodimac.Perfilamiento" />
+    <EntitySet Name="SolicitudDevolucion" EntityType="ModelAppSodimac.SolicitudDevolucion" />
+    <AssociationSet Name="FK_ProductoDevolucion" Association="ModelAppSodimac.FK_ProductoDevolucion">
+      <End Role="SolicitudDevolucion" EntitySet="SolicitudDevolucion" />
+      <End Role="DetalleSolicitudDevolucion" EntitySet="DetalleSolicitudDevolucion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DevolucionEstado" Association="ModelAppSodimac.FK_DevolucionEstado">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="SolicitudDevolucion" EntitySet="SolicitudDevolucion" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Auditoria">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Error" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Pila" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DetalleSolicitudDevolucion">
+    <Key>
+      <PropertyRef Name="Sku" />
+      <PropertyRef Name="IdSolicitudDevolucion" />
+    </Key>
+    <Property Name="Sku" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="TipoDevolucion" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TipoDevolucionNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdSolicitudDevolucion" Type="Int64" Nullable="false" />
+    <Property Name="NombreProducto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Precio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SolicitudDevolucion" Relationship="ModelAppSodimac.FK_ProductoDevolucion" FromRole="DetalleSolicitudDevolucion" ToRole="SolicitudDevolucion" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SolicitudDevolucion" Relationship="ModelAppSodimac.FK_DevolucionEstado" FromRole="Estado" ToRole="SolicitudDevolucion" />
+  </EntityType>
+  <EntityType Name="Perfilamiento">
+    <Key>
+      <PropertyRef Name="EMAIL" />
+    </Key>
+    <Property Name="EMAIL" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CEDULA" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NOMBRE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TIENDA_RECURRENTE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="FAMILIA1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FAMILIA2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FAMILIA3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FECHA_ULTIMA_COMPRA" Type="DateTime" Precision="3" />
+    <Property Name="CLIENTE_S" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CMR" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PUNTOS_CMR" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SolicitudDevolucion">
+    <Key>
+      <PropertyRef Name="IdSolicitudDevolucion" />
+    </Key>
+    <Property Name="IdSolicitudDevolucion" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrdenCompra" Type="Int64" Nullable="false" />
+    <Property Name="IdSaps" Type="Int64" Nullable="false" />
+    <Property Name="Identificacion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TipoIdentificacion" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TipoIdentificacionNombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="FechaActualizacion" Type="DateTime" Precision="3" />
+    <Property Name="FechaCompra" Type="DateTime" Precision="3" />
+    <Property Name="IdNotaPedido" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IdAlmacenPago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TerminalPago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Transaccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaPago" Type="DateTime" Precision="3" />
+    <Property Name="Sticker" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroDevolucion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Causal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Observacion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetalleSolicitudDevolucion" Relationship="ModelAppSodimac.FK_ProductoDevolucion" FromRole="SolicitudDevolucion" ToRole="DetalleSolicitudDevolucion" />
+    <NavigationProperty Name="Estado1" Relationship="ModelAppSodimac.FK_DevolucionEstado" FromRole="SolicitudDevolucion" ToRole="Estado" />
+  </EntityType>
+  <Association Name="FK_ProductoDevolucion">
+    <End Type="ModelAppSodimac.SolicitudDevolucion" Role="SolicitudDevolucion" Multiplicity="1" />
+    <End Type="ModelAppSodimac.DetalleSolicitudDevolucion" Role="DetalleSolicitudDevolucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SolicitudDevolucion">
+        <PropertyRef Name="IdSolicitudDevolucion" />
+      </Principal>
+      <Dependent Role="DetalleSolicitudDevolucion">
+        <PropertyRef Name="IdSolicitudDevolucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DevolucionEstado">
+    <End Type="ModelAppSodimac.Estado" Role="Estado" Multiplicity="1" />
+    <End Type="ModelAppSodimac.SolicitudDevolucion" Role="SolicitudDevolucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SolicitudDevolucion">
+        <PropertyRef Name="Estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

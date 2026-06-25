@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651892}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Asesoftware.Sodimac.BackHc.DTO</RootNamespace>
+    <AssemblyName>Asesoftware.Sodimac.BackHc.DTO</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="BD\ParametroDto.cs" />
+    <Compile Include="BD\ProcedimientoParametroDto.cs" />
+    <Compile Include="Devolucion\DetalleSolicitudDTO.cs" />
+    <Compile Include="Devolucion\DevolucionDTO.cs" />
+    <Compile Include="Devolucion\SolicitudDTO.cs" />
+    <Compile Include="Mensaje\Mensaje.cs" />
+    <Compile Include="Perfilamiento\PerfilamientoDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+</Project>

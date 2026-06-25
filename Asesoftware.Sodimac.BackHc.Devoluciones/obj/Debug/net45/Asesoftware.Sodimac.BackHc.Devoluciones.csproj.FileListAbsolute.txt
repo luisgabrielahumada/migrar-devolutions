@@ -1,0 +1,17 @@
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.pdb
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Modelo.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\EntityFramework.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.DTO.pdb
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Modelo.pdb
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Modelo.dll.config
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.pdb
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\bin\Debug\net45\Asesoftware.Sodimac.BackHc.Entidad.dll.config
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.csproj.AssemblyReference.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.csproj.CoreCompileInputs.cache
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\obj\Debug\net45\Asesoftw.E6DA949E.Up2Date
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.dll
+C:\_Development\_areaMovil\HomeCenter\soco-prod-apphc-apirest\Asesoftware.Sodimac.BackHc.Devoluciones\obj\Debug\net45\Asesoftware.Sodimac.BackHc.Devoluciones.pdb

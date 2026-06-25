@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651894}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Asesoftware.Sodimac.BackHc</RootNamespace>
+    <AssemblyName>Asesoftware.Sodimac.BackHc.Modelo</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="Entidad\EntitiesAppSodimac.cs" />
+    <Compile Include="Modelo\Base\IRepositorio.cs" />
+    <Compile Include="Modelo\Base\Repositorio.cs" />
+    <Compile Include="Modelo\Base\UnitOfWork.cs" />
+    <Compile Include="Modelo\Repositorio\AuditoriaRepositorio.cs" />
+    <Compile Include="Modelo\Repositorio\DevolucionRepositorio.cs" />
+    <Compile Include="Modelo\Repositorio\PerfilamientoRepositorio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modelo.AppSodimacModel.csdl" />
+    <EmbeddedResource Include="Modelo.AppSodimacModel.msl" />
+    <EmbeddedResource Include="Modelo.AppSodimacModel.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.DTO\Asesoftware.Sodimac.BackHc.DTO.csproj">
+      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651892}</Project>
+      <Name>Asesoftware.Sodimac.BackHc.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Entidad\Asesoftware.Sodimac.BackHc.Entidad.csproj">
+      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651893}</Project>
+      <Name>Asesoftware.Sodimac.BackHc.Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

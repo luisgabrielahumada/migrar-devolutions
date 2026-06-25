@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelAppSodimacStoreContainer" CdmEntityContainer="EntitiesAppSodimac">
+    <EntitySetMapping Name="Auditoria">
+      <EntityTypeMapping TypeName="ModelAppSodimac.Auditoria">
+        <MappingFragment StoreEntitySet="Auditoria">
+          <ScalarProperty Name="Pila" ColumnName="Pila" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Error" ColumnName="Error" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleSolicitudDevolucion">
+      <EntityTypeMapping TypeName="ModelAppSodimac.DetalleSolicitudDevolucion">
+        <MappingFragment StoreEntitySet="DetalleSolicitudDevolucion">
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="IdSolicitudDevolucion" ColumnName="IdSolicitudDevolucion" />
+          <ScalarProperty Name="TipoDevolucionNombre" ColumnName="TipoDevolucionNombre" />
+          <ScalarProperty Name="TipoDevolucion" ColumnName="TipoDevolucion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado">
+      <EntityTypeMapping TypeName="ModelAppSodimac.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfilamiento">
+      <EntityTypeMapping TypeName="ModelAppSodimac.Perfilamiento">
+        <MappingFragment StoreEntitySet="Perfilamiento">
+          <ScalarProperty Name="PUNTOS_CMR" ColumnName="PUNTOS_CMR" />
+          <ScalarProperty Name="CMR" ColumnName="CMR" />
+          <ScalarProperty Name="CLIENTE_S" ColumnName="CLIENTE_S" />
+          <ScalarProperty Name="FECHA_ULTIMA_COMPRA" ColumnName="FECHA_ULTIMA_COMPRA" />
+          <ScalarProperty Name="FAMILIA3" ColumnName="FAMILIA3" />
+          <ScalarProperty Name="FAMILIA2" ColumnName="FAMILIA2" />
+          <ScalarProperty Name="FAMILIA1" ColumnName="FAMILIA1" />
+          <ScalarProperty Name="TIENDA_RECURRENTE" ColumnName="TIENDA_RECURRENTE" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SolicitudDevolucion">
+      <EntityTypeMapping TypeName="ModelAppSodimac.SolicitudDevolucion">
+        <MappingFragment StoreEntitySet="SolicitudDevolucion">
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Causal" ColumnName="Causal" />
+          <ScalarProperty Name="NumeroDevolucion" ColumnName="NumeroDevolucion" />
+          <ScalarProperty Name="Sticker" ColumnName="Sticker" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="Transaccion" ColumnName="Transaccion" />
+          <ScalarProperty Name="TerminalPago" ColumnName="TerminalPago" />
+          <ScalarProperty Name="IdAlmacenPago" ColumnName="IdAlmacenPago" />
+          <ScalarProperty Name="IdNotaPedido" ColumnName="IdNotaPedido" />
+          <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+          <ScalarProperty Name="FechaActualizacion" ColumnName="FechaActualizacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="ApellidoUsuario" ColumnName="ApellidoUsuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="TipoIdentificacionNombre" ColumnName="TipoIdentificacionNombre" />
+          <ScalarProperty Name="TipoIdentificacion" ColumnName="TipoIdentificacion" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="IdSaps" ColumnName="IdSaps" />
+          <ScalarProperty Name="OrdenCompra" ColumnName="OrdenCompra" />
+          <ScalarProperty Name="IdSolicitudDevolucion" ColumnName="IdSolicitudDevolucion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

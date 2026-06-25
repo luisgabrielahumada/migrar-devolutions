@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{4703B4E8-701D-4250-90D9-005C2F6C2547}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Asesoftware.Sodimac.BackHc.Perfilamientos</RootNamespace>
+    <AssemblyName>Asesoftware.Sodimac.BackHc.Perfilamiento</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="PerfilamientoNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Asesoftware.Sodimac.BackHc.DTO">
+      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\Asesoftware.Sodimac.BackHc.DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="Asesoftware.Sodimac.BackHc.Entidad">
+      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\Asesoftware.Sodimac.BackHc.Entidad.dll</HintPath>
+    </Reference>
+    <Reference Include="Asesoftware.Sodimac.BackHc.Modelo">
+      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\Asesoftware.Sodimac.BackHc.Modelo.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\wwwroot_soco-prod-apphc-apirest 1\bin\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>

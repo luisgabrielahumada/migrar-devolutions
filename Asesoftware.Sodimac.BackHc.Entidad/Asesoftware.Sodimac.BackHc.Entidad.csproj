@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651893}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Asesoftware.Sodimac.BackHc.Entidad</RootNamespace>
+    <AssemblyName>Asesoftware.Sodimac.BackHc.Entidad</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="Auditoria.cs" />
+    <Compile Include="DetalleSolicitudDevolucion.cs" />
+    <Compile Include="Estado.cs" />
+    <Compile Include="Perfilamiento.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolicitudDevolucion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

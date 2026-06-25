@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F1EB76D2-748C-49DA-B6B6-98E508651891}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Asesoftware.Sodimac.BackHc.Devoluciones</RootNamespace>
+    <AssemblyName>Asesoftware.Sodimac.BackHc.Devoluciones</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net45</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="DevolucionNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.DTO\Asesoftware.Sodimac.BackHc.DTO.csproj">
+      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651892}</Project>
+      <Name>Asesoftware.Sodimac.BackHc.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Asesoftware.Sodimac.BackHc.Modelo\Asesoftware.Sodimac.BackHc.Modelo.csproj">
+      <Project>{F1EB76D2-748C-49DA-B6B6-98E508651894}</Project>
+      <Name>Asesoftware.Sodimac.BackHc.Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>

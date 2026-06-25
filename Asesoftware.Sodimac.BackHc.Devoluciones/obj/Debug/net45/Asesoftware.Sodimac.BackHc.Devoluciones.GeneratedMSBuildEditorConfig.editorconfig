@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Asesoftware.Sodimac.BackHc.Devoluciones
+build_property.ProjectDir = C:\_Development\_areaMovil\HomeCenter\SITD-DevolucionesTmp\Asesoftware.Sodimac.BackHc.Devoluciones\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

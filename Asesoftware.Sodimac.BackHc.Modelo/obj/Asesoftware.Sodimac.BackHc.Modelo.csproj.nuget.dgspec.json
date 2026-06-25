@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {}
+  },
+  "projects": {
+    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj",
+        "projectName": "Asesoftware.Sodimac.BackHc.DTO",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj",
+        "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luisg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "framework": "net45",
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net45": {
+          "framework": "net45",
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj",
+        "projectName": "Asesoftware.Sodimac.BackHc.Entidad",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj",
+        "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luisg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "framework": "net45",
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net45": {
+          "framework": "net45",
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj",
+        "projectName": "Asesoftware.Sodimac.BackHc.Modelo",
+        "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\Asesoftware.Sodimac.BackHc.Modelo.csproj",
+        "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
+        "outputPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Modelo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luisg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/luisgabrielahumada/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "framework": "net45",
+            "targetAlias": "net45",
+            "projectReferences": {
+              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.DTO\\Asesoftware.Sodimac.BackHc.DTO.csproj"
+              },
+              "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj": {
+                "projectPath": "C:\\_Development\\_areaMovil\\HomeCenter\\SITD-DevolucionesTmp\\Asesoftware.Sodimac.BackHc.Entidad\\Asesoftware.Sodimac.BackHc.Entidad.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net45": {
+          "framework": "net45",
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
