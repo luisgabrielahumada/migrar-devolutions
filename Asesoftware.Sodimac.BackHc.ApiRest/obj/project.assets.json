@@ -6701,7 +6701,8 @@
       "Asesoftware.Sodimac.BackHc.Perfilamiento >= 1.0.0",
       "Asesoftware.Sodimac.BackHc.Token >= 1.0.0",
       "Asesoftware.Sodimac.BackHc.Utilidades >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "System.Configuration.ConfigurationManager >= 8.0.0"
     ]
   },
   "packageFolders": {
@@ -6780,6 +6781,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           }
         },
         "imports": [
